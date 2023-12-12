@@ -15,6 +15,13 @@ apt install -y build-essential checkinstall zlib1g-dev
 apt install -y git curl autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev
 apt install -y curl g++ gcc autoconf automake bison libc6-dev libffi-dev libgdbm-dev libncurses5-dev libsqlite3-dev libtool libyaml-dev make pkg-config sqlite3 zlib1g-dev libgmp-dev libreadline-dev libssl-dev
 
+apt install -y dkms
+apt install -y ubuntu-mate-desktop
+
+apt install -fy
+
+apt install -y glances
+
 apt install -y ruby-full
 apt install -y rbenv
 
@@ -37,3 +44,5 @@ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 source ~/.bashrc
 
 RUBY_CONFIGURE_OPTS=--with-openssl-dir=/opt/openssl-1.1.1q rbenv install 2.7.4
+
+apt install -fy
